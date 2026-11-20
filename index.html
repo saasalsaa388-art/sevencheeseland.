@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#FFC72C" />
+    <title>simpel – Menu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <svg class="logo" viewBox="0 0 120 120" aria-hidden="true">
+        <path
+          d="M14 92 L106 70 V34 L14 56Z"
+          fill="#FFE27A"
+          stroke="#4A2E0A"
+          stroke-width="5"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M14 56 L106 34 L74 18 Z"
+          fill="#FFF3B0"
+          stroke="#4A2E0A"
+          stroke-width="5"
+          stroke-linejoin="round"
+        />
+        <circle
+          cx="44"
+          cy="66"
+          r="7"
+          fill="#F2B705"
+          stroke="#4A2E0A"
+          stroke-width="3"
+        />
+        <circle
+          cx="82"
+          cy="52"
+          r="5"
+          fill="#F2B705"
+          stroke="#4A2E0A"
+          stroke-width="3"
+        />
+        <circle
+          cx="64"
+          cy="80"
+          r="4"
+          fill="#F2B705"
+          stroke="#4A2E0A"
+          stroke-width="3"
+        />
+      </svg>
+      <h1>Seven Cheeseland</h1>
+      <p>Gurih, lumer, bikin nagih. Ketuk menu untuk lihat detail.</p>
+    </header>
+    <svg
+      class="drips"
+      viewBox="0 0 400 46"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <g fill="currentColor">
+        <rect x="0" y="0" width="400" height="10" />
+        <rect
+          x="30"
+          y="0"
+          width="26"
+          height="34"
+          rx="13"
+          style="animation-delay: 0.1s"
+        />
+        <rect
+          x="95"
+          y="0"
+          width="22"
+          height="22"
+          rx="11"
+          style="animation-delay: 0.3s"
+        />
+        <rect
+          x="150"
+          y="0"
+          width="30"
+          height="44"
+          rx="15"
+          style="animation-delay: 0.2s"
+        />
+        <rect
+          x="230"
+          y="0"
+          width="24"
+          height="28"
+          rx="12"
+          style="animation-delay: 0.4s"
+        />
+        <rect
+          x="290"
+          y="0"
+          width="28"
+          height="40"
+          rx="14"
+          style="animation-delay: 0.15s"
+        />
+        <rect
+          x="350"
+          y="0"
+          width="22"
+          height="24"
+          rx="11"
+          style="animation-delay: 0.35s"
+        />
+      </g>
+    </svg>
+
+    <nav class="tabs" aria-label="Filter menu">
+      <button class="tab" data-f="all" aria-pressed="true">Semua</button>
+      <button class="tab" data-f="f" aria-pressed="false">Makanan</button>
+      <button class="tab" data-f="d" aria-pressed="false">Minuman</button>
+    </nav>
+
+    <main>
+      <section id="secF">
+        <h2>Makanan</h2>
+        <div class="grid" id="foods">
+          <button
+            class="item"
+            data-desc="Makaroni yang dibalut dengan saus keju creamy, dibentuk menjadi bite-size, lalu digoreng hingga bagian luarnya renyah dengan bagian dalam yang lembut dan cheesy."
+          >
+            <div class="pic">
+              <img src="images/mac-cheese-balls.jpg" alt="Mac n Cheese Bites" />
+            </div>
+            <div class="name">Mac n Cheese Bites</div>
+            <div class="price">Rp 8.000</div>
+            <div class="hint">Ketuk untuk detail</div>
+          </button>
+          <button
+            class="item"
+            data-desc="Ayam fillet berbalut tepung roti yang renyah, dengan isian smoked beef dan keju leleh yang gurih, disajikan dengan perpaduan tekstur crispy di luar dan lembut di dalam, dilengkapi kentang dan salad segar sebagai pelengkap."
+          >
+            <div class="pic">
+              <img
+                src="images/cheese-cordon-bleu.jpg"
+                alt="Cheese Cordon Bleu"
+              />
+            </div>
+            <div class="name">Chicken Cordon Bleu</div>
+            <div class="price">Rp 15.000</div>
+            <div class="hint">Ketuk untuk detail</div>
+          </button>
+          <button
+            class="item"
+            data-desc="Puding lembut dengan perpaduan rasa manis, creamy, dan gurih khas cheesecake, memiliki tekstur halus dengan sensasi lumer di mulut."
+          >
+            <div class="pic">
+              <img src="images/mini-cheesecake.jpg" alt="Pudding Cheesecake" />
+            </div>
+            <div class="name">Pudding Cheesecake</div>
+            <div class="price">Rp 8.000</div>
+            <div class="hint">Ketuk untuk detail</div>
+          </button>
+        </div>
+      </section>
+      <section id="secD">
+        <h2>Minuman</h2>
+        <div class="grid" id="drinks">
+          <button
+            class="item"
+            data-desc="Minuman segar dengan perpaduan rasa jeruk yang manis dan sedikit asam, disajikan dingin dengan warna cerah dan sensasi menyegarkan."
+          >
+            <div class="pic">
+              <img src="images/es-jeruk.jpg" alt="Mocktail Orange " />
+            </div>
+            <div class="name">Mocktail Orange</div>
+            <div class="price">Rp 5.000</div>
+            <div class="hint">Ketuk untuk detail</div>
+          </button>
+          <button
+            class="item"
+            data-desc="Perpaduan kopi dan susu full cream dengan tekstur lembut, rasa creamy, manis yang pas, serta aroma kopi yang khas dalam setiap sajian."
+          >
+            <div class="pic">
+              <img src="images/iced-latte.jpg" alt="Creamy Coffee" />
+            </div>
+            <div class="name">Creamy Coffee</div>
+            <div class="price">Rp 6.000</div>
+            <div class="hint">Ketuk untuk detail</div>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="dlg" aria-labelledby="dName">
+      <div id="dPic"></div>
+      <h3 id="dName"></h3>
+      <p id="dPrice"></p>
+      <p id="dDesc"></p>
+      <button class="close" id="closeBtn">Tutup</button>
+    </dialog>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
